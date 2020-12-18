@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>예매하기2</title>
+    <!-- <link rel="stylesheet" href="css/sub_ticketing2.css"> -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub.css">
+  <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1.min.js"></script>
+  <!--  <script src="js/sub_ticketing2.js"></script> -->
+    <script src="js/common.js"></script>
+    <script src="js/sub.js"></script>
+    <script src="js/quick.js"></script>
+  </head>
+  <body>
+    <!-- 메인헤더 -->
+    <header id="header">
+      <div>
+        <h1><a href="index.html">동성 아트홀</a></h1>
+      </div>
+
+      <!-- 네비게이션 -->
+      <nav id="gnb1">
+        <h2 class="hidden">동성아트홀 이용메뉴</h2>
+        <ul>
+          <li class="visible">
+            <a href="#" class="menu1">아트홀</a>
+            <ul class="gnbhide">
+              <li><img src="images/line.png" alt=""></li>
+              <li><a href="sub_ceo.html">인사말</a></li>
+              <li><a href="#">오시는 길</a></li>
+              <li><a href="#">좌석배치도</a></li>
+            </ul>
+          </li>
+          <li class="visible"><a href="#" class="menu2">영화정보</a>
+            <ul class="gnbhide">
+              <li><img src="images/line.png" alt=""></li>
+              <li><a href="sub_detail.html">현재 상영작</a></li>
+              <li><a href="#">개봉 예정작</a></li>
+              <li><a href="#">지난 상영작</a></li>
+            </ul>
+          </li>
+          <li class="visible"><a href="#" class="menu3">예매</a>
+            <ul class="gnbhide">
+              <li><img src="images/line.png" alt=""></li>
+              <li><a href="#">상영시간표</a></li>
+              <li><a href="sub_ticketing.html">영화예매</a></li>
+            </ul>
+          </li>
+          <li class="visible"><a href="#" class="menu4">매거진</a>
+            <ul class="gnbhide">
+              <li><img src="images/line.png" alt=""></li>
+              <li><a href="sub_notice.html">공지사항</a></li>
+              <li><a href="sub_news.html">뉴스</a></li>
+            </ul>
+          </li>
+          <li class="visible"><a href="#" class="menu5">커뮤니티</a>
+            <ul class="gnbhide">
+              <li><img src="images/line.png" alt=""></li>
+              <li><a href="sub_recommend.html">영화추천</a></li>
+              <li><a href="#">상영요청</a></li>
+              <li><a href="#">Q&A</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <nav id="gnb2">
+        <h2 class="hidden">회원이용 메뉴</h2>
+        <ul>
+          <li><a href="#" class="login">로그인</a></li>
+          <li><a href="#" class="search">검색</a></li>
+        </ul>
+        <div id="searchWrap">
+          <form>
+              <input type="text" class="bar" style="border: 0;" placeholder="검색어를 입력하세요">
+              <input type="submit" class="button" value="검색" style="border:0;">
+              <img src="images/searchLine.png" alt="" class="searchLine">
+              <img src="images/searchClose.png" alt="" class="searchClose">
+          </form>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="content">
+        <h2 class="hidden">예매하기</h2>
+        <div id="ticketWrap">
+          <div class="peopleWrap">
+            <p class="p1">일반</p>
+            <div class="people">
+              <a href="#"><div class="minus">-</div></a>
+              <div class="num">0</div>
+              <a href="#"><div class="plus">+</div></a>
+            </div>
+          </div>
+          <div class="main">
+            <img src="images/screen.png" alt="스크린">
+            <div class="r a">
+              <p>A</p>
+              <a href="#"><div class="odd">A01</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">A03</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">A05</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">A07</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">A09</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">A11</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">A13</div></a>
+              <a href="#"><div class="even"></div></a>
+              <p>B</p>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">B02</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">B04</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">B06</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">B08</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">B10</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">B12</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">B14</div></a>
+              <p>C</p>
+              <a href="#"><div class="odd">C01</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">C03</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">C05</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">C07</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">C09</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">C11</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">C13</div></a>
+              <a href="#"><div class="even"></div></a>
+              <p>D</p>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">D02</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">D04</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">D06</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">D08</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">D10</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">D12</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">D14</div></a>
+              <p>E</p>
+              <a href="#"><div class="odd">E01</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">E03</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">E05</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">E07</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">E09</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">E11</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">E13</div></a>
+              <a href="#"><div class="even"></div></a>
+              <p>F</p>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">F02</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">F04</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">F06</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">F08</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">F10</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">F12</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">F14</div></a>
+              <p>G</p>
+              <a href="#"><div class="odd">G01</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">G03</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">G05</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">G07</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">G09</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">G11</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">G13</div></a>
+              <a href="#"><div class="even"></div></a>
+              <p>H</p>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">H02</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">H04</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">H06</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">H08</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">H10</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">H12</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">H14</div></a>
+              <p>I</p>
+              <a href="#"><div class="odd">I01</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">I03</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">I05</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">I07</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">I09</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">I11</div></a>
+              <a href="#"><div class="even"></div></a>
+              <a href="#"><div class="odd">I13</div></a>
+              <a href="#"><div class="even"></div></a>
+            </div>
+            <div class="seat">
+              <div class="a11">
+                <div class="a1"></div>
+                <p>일반석</p>
+              </div>
+              <div class="a22">
+                <div class="a2"></div>
+                <p>현재선택</p>
+              </div>
+              <div class="a33">
+                <div class="a3"></div>
+                <p>예매완료</p>
+              </div>
+              <div class="a44">
+                <div class="a4"></div>
+                <p>띄어앉기석</p>
+              </div>
+            </div>
+          </div>
+          <div class="infoWrap">
+            <div class="title">
+              <img src="images/small15.png" alt="">
+              <p>모든것을 벗어던진 특별한 여행</p>
+            </div>
+            <img class="tkok" src="images/tkok1.png" alt="">
+            <div class="p">
+              <p>상영방식: 2D 자막</p>
+              <p>상영관: 1관</p>
+              <p>상영등급: 15세 이상 관람가</p>
+              <p>날짜: 2020.10.05(월)</p>
+              <p>상영시간: 11:00 - 12:41</p>
+              <p>인원: 일반(<span class="audience">0</span>)</p>
+              <p>좌석: <span class="seatA"></span> </p>
+
+            </div>
+          </div>
+          <div class="purpleBtnWrap">
+            <a href="sub_ticketing.html">영화선택
+            </a>
+            <img class="prev" src="images/choicePrev.png" alt="영화선택 버튼">
+            <a href="#" class="buy">
+              결제하기
+            </a>
+            <img class="next" src="images/choiceNext.png" alt="결제하기 버튼">
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+
+
+
+    <!-- 퀵메뉴 -->
+    <aside id="quick">
+      <h2 class="hidden">퀵메뉴</h2>
+      <div>
+        <a href="#"><p>상영시간표</p></a>
+        <a href="sub_ticketing.html"><p>예매하기</p></a>
+        <a href="#"><p>마이페이지</p></a>
+        <a href="#"><p>top</p></a>
+      </div>
+    </aside>
+  <!-- 푸터 -->
+  <div id="footerWrap">
+    <footer id="footer">
+      <div>
+        <ul class="bannerWrap">
+          <li class="banner1" ><a href="https://www.kofic.or.kr" target="_blank">영화 진흥위원회</a></li>
+          <li class="banner2" ><a href="http://www.kifv.org" target="_blank">한국 독립영화 협회</a></li>
+          <li class="banner3" ><a href="http://www.cinematheque.seoul.kr" target="_blank">한국 시네마테크 협의회</a></li>
+          <li class="banner4" ><a href="https://www.indiedb.net" target="_blank">독립영화 데이터베이스</a></li>
+          <li class="banner5" ><a href="http://www.artpluscn.or.kr" target="_blank">ARTPPLUS CINEMA NETWORK</a></li>
+          <li class="banner6"><a href="https://www.koreafilm.or.kr" target="_blank">한국영상자료원</a></li>
+        </ul>
+      </div>
+      <div class="Wrap">
+        <ul class="smallGnb">
+          <li><a href="sub_ceo.html">아트홀</a></li>
+          <li class="line1"><a href="sub_nowPlaying.html">영화정보</a></li>
+          <li class="line2"><a href="sub_ticketing.html">예매</a></li>
+          <li class="line3"><a href="sub_notice.html">매거진</a></li>
+          <li><a href="sub_recommend.html">커뮤니티</a></li>
+        </ul>
+        <div class="contact">
+          <p> 대구 동성아트홀 </p>
+          <p> 대구광역시 중구 동성로 69 (동성로 1가) &nbsp;| &nbsp;대표 : 김주성 &nbsp;| &nbsp;사업자등록번호 : 726-02-00106</p>
+          <address> TEL:(053)425-2845</address>
+          <small> &copy; 2015 dongsung art hall all rights reserved.</small>
+        </div>
+        <ul class="sns">
+          <li class="kakao"><a href="https://pf.kakao.com/_DHEtxd" target="_blank">카카오톡 바로가기</a></li>
+          <li class="insta"><a href="https://www.instagram.com/dsartmovie/" target="_blank">인스타그램 바로가기</a></li>
+          <li class="fb"><a href="https://www.facebook.com/dsartmovie" target="_blank">페이스북 바로가기</a></li>
+          <li class="tw"><a href="https://twitter.com/dsartmovie" target="_blank">트위터 바로가기</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  </body>
+</html>
